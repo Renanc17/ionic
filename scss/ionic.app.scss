@@ -1,0 +1,408 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+.limiteTela{
+  max-width: 400px !important;
+  align: center !important;
+  margin: 0 auto;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+}
+.pane{background-color: #D1D1D1 !important;}
+
+.custompaddingzero{
+ padding-bottom: -0px !important;
+}
+
+.arredondaButton2{border-radius: 10px !important; margin-left: 13% !important; margin-right: auto !important;width: 30% !important;text-align: center !important;display: inline !important;}
+.arredondaButton{border-radius: 5px !important; width: 95% !important; text-align: center !important; margin-left: auto !important; margin-right: auto !important;}
+.button-center{margin-left: auto !important; margin-right: auto !important; width: 90% !important; text-align: center !important;}
+
+
+$bgColor: #F5F5F5;
+$baseColor: #da291c !default;
+$baseColor2ndHue: #da291c !default;
+$fontColor: $baseColor   !default; //mais #5B5C5E
+$selectColor: #889CA9 !default;
+$bar-footer-title: #da291c !default;
+.footer-title{color: #5E606B !important; font-size: 15px !important; top: -7px !important;}
+
+$fonte: #7F7F7F; // Fonte padrão (preto c/ cinza)
+
+$royal: $baseColor2ndHue !default;
+
+//botao de destaque
+$energized: $baseColor !default;
+
+$assertive: $selectColor !default;
+$calm: #E8E8E8 !default; //Usado no Footer-Bar
+
+$button-light-border: $energized !default;
+$button-light-text: $energized !default;
+
+$button-energized-font-weight: bold !default;
+
+$bar-footer-height: 30px !default;
+
+
+$popup-button: $energized !default;
+
+// $button-light-border:
+
+/* General */
+
+
+
+.divLogo{vertical-align:middle; text-align:center !important;}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+label{opacity: 0.87}
+
+.shadowBox{box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); font-weight: bold; font-size:17px;}
+
+/* Login 2.0,Falha-login e atendente*/
+
+.login2{background-color: $bgColor;}
+
+.login2 .divInputs{margin-top:5%;margin-bottom:15%;}
+.login2 .divLogo{vertical-align:middle; text-align:center;}
+
+.login2 .testeInput{display:inline; width: 37px; border:1px solid #000; height: 20px; padding: 0px;}
+.login2 .maisEspaco{margin-top: 5%;}
+.login2 .nomePadding{padding: 0px important;}
+
+.overwritePadding{padding-top: 0px !important;}
+
+
+/* Login */
+
+.login .divConteudo{margin-left:5%; margin-right:5%;}
+.login .divInputs{margin-top:5%;margin-bottom:15%;}
+
+.login .teste2{margin-left:25%;}
+.login .teste{display:inline; padding: none;}
+
+.login .divLogo{vertical-align:middle; text-align:center;}
+
+.login input{width:100%;}
+
+.overwritePadding{padding-top: 0px !important;}
+
+//------ TELA DE COBRANCA ------
+
+.cobranca .divEscolhaBotoes{padding: 3%;}
+.cobranca{background-color: $bgColor;}
+
+.cobranca .divConteudo{margin-left:5%; margin-right:5%;}
+.cobranca .divInfoChamada{margin-top: 5%;margin-bottom:5%;}
+.cobranca .divcobrancaInfo{border: 1px solid #ddd;}
+.cobranca .divBoleto{text-align: center;}
+
+.divBotoes{margin-left: 5%; margin-right: 5%;}
+
+.cobranca .customPadding2{padding-left: 5px;}
+.cobranca .customRow{padding-top: 0px !important;}
+
+.cobranca .fontedestaque{font-weight: bold; font-size: 105%;  color: red;}
+
+.reducedTopSpace{
+  margin-top: 10px !important;
+  margin-bottom: 0px !important;
+}
+
+.cobranca .card .teste2{
+  background: $baseColor2ndHue;
+  height: 7%;
+  color: #FFF;
+  text-align: center;
+  padding: 5px;
+  font-weight: normal;
+  color: #FFF !important;
+}
+
+.paddingSide{
+  margin: 0 3%
+}
+
+
+input[type="text"]{
+  border: 1px solid #ddd !important;
+}
+
+.cobranca .tabs{
+  height: 50px !important;
+}
+
+.cobranca .direito{
+  font-size: 17px !important;
+  border-left: solid 1px;
+  border-color: #757575 !important;
+}
+
+.cobranca .dividaSimula{text-align: center;}
+
+.cobranca .titulo{color: $baseColor; text-align: center; font-weight: bold; font-size:17px; margin-bottom: 5%;}
+
+.selectable{
+  -webkit-user-select: auto;
+}
+
+.cobranca hr{background: #ddd;clear: both;float: none;width: 100%;height: 1px;border: none; margin-top: 0px !important; margin-bottom: 0px !important;}
+.cobranca span{opacity: 0.87;}
+.cobranca .secondaryText{ opacity: 0.54;}
+.cobranca b{margin-bottom: 10px;}
+.cobranca .maisEspaco{margin-left: 10% !important;}
+.cobranca .maisEspacoo{margin-left: 2% !important;}
+
+//-------- UNSUBSCRIBE -----
+
+.unsubscribe{background-color: $bgColor;}
+.unsubscribe .button-small{display: table; margin: 2% auto;}
+.unsubscribe .divDetail{padding-left: 2%;padding-right: 2%;}
+.unsubscribe textarea{
+  width: 100%;
+  height: 150px;
+  border: 1px solid $baseColor;
+}
+
+//.ticket textarea{ width: 100%; height: 175px; border-bottom: 1px solid #ddd; margin-top: 20px;}
+
+
+//-------- BOLETO ------
+
+.boleto{background-color: $bgColor;}
+
+/* Negociado */
+
+.negociado{background-color: $bgColor;}
+
+.negociado .divEnviar{margin-top: 10%;}
+.negociado input{width: 100%; margin-top:5%;}
+.negociado .testeInput{border:1px solid #000; height: 20px; padding: 0px;}
+
+
+/*Channels*/
+
+.channels .divConteudo{margin-left:5%; margin-right:5%;}
+.channels .divLogo{vertical-align:middle; text-align:center}
+.channels .divTitle{padding-bottom: 5px;}
+.channels .divInfoChamada{margin-top: -20px; margin-bottom: -15px;}
+.channels .divProtocolo{margin-top: -20px;}
+
+.channels .divLeftIconList{margin-top: 5px; margin-right:2%;}
+.channels .divLeftIconClockAndHash{margin-top: 5px; margin-right:2%;}
+.channels .negritoCorFonte{color: $fontColor;}
+
+
+.channels b{font-size:15px;}
+.channels p{margin-bottom:-2px;}
+.channels label{opacity: 0.87}
+.channels span{opacity: 0.54;display: inline;}
+
+.channels hr {background: #ddd;clear: both;float: none;width: 100%;height: 1px;margin: 0 0 1.4em;border: none;}
+.channels{background-color: #FAFAFA;}
+
+
+/*Channels
+
+.channels .divConteudo{margin-left:5%; margin-right:5%;}
+.channels .divLogo{vertical-align:middle; text-align:center}
+.channels .divTitle{padding-bottom: 5px;}
+.channels .divInfoChamada{margin-top: -20px; margin-bottom: -15px;}
+.channels .divProtocolo{margin-top: -20px;}
+
+.channels .divLeftIconList{margin-top: 5px; margin-right:2%;}
+.channels .divLeftIconClockAndHash{margin-top: 5px; margin-right:2%;}
+.channels .negritoCorFonte{color: $fontColor;}
+
+
+.channels b{font-size:15px;}
+.channels p{margin-bottom:-2px;}
+.channels label{opacity: 0.87}
+.channels span{opacity: 0.54;display: inline;}
+
+.channels{background-color: #FAFAFA;}*/
+
+
+.seta{float: right;
+vertical-align: text-top;}
+.arrayBoleto{color: $baseColor !important; background: $baseColor2ndHue; background-color: $baseColor2ndHue;}
+
+#map {
+  width: 100%;
+  height: 50%;
+}
+
+.scroll {
+  height: 50%;
+}
+
+a {
+  color:inherit;
+  text-decoration: none;
+ }
+
+// -- LOTERICA
+
+.loterica{
+  font-weight: bold;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+.endereco{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.distancia{
+  text-align: right;
+}
+
+.tabs{
+  position: relative !important;
+}
+
+
+.bar{
+  border-bottom: 0px !important;
+  background-image: none !important;
+  background-size: 0px !important;
+}
+
+.button-location{
+  z-index: 1 !important;
+  padding: 0 8px !important;
+  min-width: initial !important;
+  min-height: 31px !important;
+  font-weight: 400 !important;
+  font-size: 17px !important;
+  line-height: 32px !important;
+  vertical-align: top !important;
+}
+
+.div-location{
+  width: 100%;
+  height: 20px;
+}
+
+.icon-top {
+  // vertical-align: super !important;
+  text-align: center;
+
+}
+
+.verNoMapa{
+  line-height: 5px !important;
+  min-height: 24px !important;
+  font-size: 14px !important;
+  font-weight: normal !important;
+}
+
+.removePaddings{
+  padding: 0px !important;
+}
+
+.mediumButton{
+  height: 32px !important;
+  line-height: 5px !important;
+  min-height: 24px !important;
+}
+
+.label-location{
+  display: block;
+  position: relative;
+  top: 11px;
+}
+
+.icon-location{
+  display: block;
+  position: relative;
+  top: -10px;
+}
+
+#promo1{
+  background: url('../img/combate.png') no-repeat fixed center;
+  background-size: 380px 170px;
+}
+#promo2{
+  background: url('../img/telecine.png') no-repeat fixed center;
+  background-size: 380px 170px;
+}
+#promo3{
+  background: url('../img/hbomax.png') no-repeat fixed center;
+}
+
+.item-style{
+  border: none;
+  height: 100px;
+  background: rgba(0,0,0, 0.01);
+  color: black;
+}
+
+.item{
+  border-color: #D9D9D9 !important;
+  color: black !important;
+}
+
+.customContentPadding{
+  margin-bottom: 40px;
+}
+
+.contrato-buttons{
+  height: 100%;
+  padding: 25% 0;
+}
+
+input[type=text]{
+  border: none !important;
+}
+
+/*@media (min-width: 680px) {
+  .modal {
+    top: 20%;
+    right: 20% !important;
+    bottom: 20%;
+    left: 40% !important;
+    min-height: 240px;
+    width: 20% !important; } }
+
+@media (max-width: 679px) {
+.modal{
+  // text-align: center !important;
+  // background-color: #CC3333 !important;
+  position: fixed !important;
+  border: 2px solid !important;
+  top: 20% !important;
+  right: 10% !important;
+  bottom: 30% !important;
+  left: 10% !important;
+  min-height: 61% !important;
+  width: 80% !important;
+  padding: 0px !important;
+
+} }*/
+
+// Include all of Ionic
+
+@import "www/lib/ionic/scss/ionic";

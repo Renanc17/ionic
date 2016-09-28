@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
+
+  <script src="lib/minAjax.js"></script>
+
+  <script type="text/javascript">
+  function getInternetExplorerVersion()
+  // Returns the version of Internet Explorer or a -1
+  // (indicating the use of another browser).
+  {
+    var rv = -1; // Return value assumes failure.
+    if (navigator.appName == 'Microsoft Internet Explorer')
+    {
+      var ua = navigator.userAgent;
+      var re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+      if (re.exec(ua) != null)
+      rv = parseFloat( RegExp.$1 );
+    }
+    return rv;
+  }
+
+  if ( getInternetExplorerVersion() > -1 )
+  {
+    location.replace('http://www.getfirefox.com');
+}
+</script>
+
+<link href="css/ionic.app.min.css" rel="stylesheet">
+<link href="lib/ion-google-place/ion-place-autocomplete.css">
+
+<!-- ionic/angularjs js -->
+<script src="lib/ionic/js/ionic.bundle.min.js"></script>
+<script src="lib/angular-resource/angular-resource.min.js"></script>
+<script src='lib/ngMask/ngMask.js'></script>
+<script src="lib/clipboard.min.js"></script>
+<script src="lib/ionic-datepicker/dist/ionic-datepicker.bundle.min.js"></script>
+<script src="lib/ion-google-place/ion-place-autocomplete.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places&sensor=false;language=pt"></script>
+<script src="lib/ngAutocomplete.js"></script>
+<script src="lib/ionic-modal-select.js"></script>
+
+<!-- cordova script (this will be a 404 during development) -->
+<script src="cordova.js"></script>
+
+<!-- your app's js -->
+<script src="app.js"></script>
+<!-- // <script src="js/controllers.js"></script> -->
+<script src="js/service.db.js"></script>
+<script src="js/service.device.js"></script>
+<script src="js/service.gerador.js"></script>
+<script src="js/service.request.js"></script>
+<script src="js/service.promocao.js"></script>
+
+<script src="Index/index.js"></script>
+<script src="Promocao/promocao.js"></script>
+<script src="Contrato/contrato.js"></script>
+<script src="Telefone/telefone.js"></script>
+<script src="Agradecimento/agradecimento.js"></script>
+<script src="Motivo/motivo.js"></script>
+<script src="Menu/menu.js"></script>
+
+</head>
+<body ng-app="starter">
+  <!--
+  The nav bar that will be updated as we navigate between views.
+-->
+<ion-nav-bar class="bar-stable">
+  <ion-nav-back-button>
+  </ion-nav-back-button>
+</ion-nav-bar>
+<!--
+The views will be rendered in the <ion-nav-view> directive below
+Templates are in the /templates folder (but you could also
+have templates inline in this html file if you'd like).
+-->
+<ion-nav-view></ion-nav-view>
+</body>
+</html>
